@@ -1,7 +1,11 @@
 public class Fizzbuzz {
 
-  protected static boolean isDivisibleByThree(int num) {
+  protected boolean isDivisibleByThree(int num) {
     return num % 3 == 0;
+  }
+
+  protected boolean isDivisibleByFive(int num) {
+    return true;
   }
 
 }

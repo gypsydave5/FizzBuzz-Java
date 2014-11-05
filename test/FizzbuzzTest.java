@@ -23,4 +23,11 @@ public class FizzbuzzTest {
     Fizzbuzz fizzbuzz = new Fizzbuzz();
     assertTrue("It knows that five is divisible by five", fizzbuzz.isDivisibleByFive(5));
   }
+
+  @Test
+  public void knowsThatSixIsNotDivisibleByFive() {
+
+    Fizzbuzz fizzbuzz = new Fizzbuzz();
+    assertFalse("It knows that six is not divisible by five", fizzbuzz.isDivisibleByFive(6));
+  }
 }
