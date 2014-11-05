@@ -5,7 +5,7 @@ public class Fizzbuzz {
   }
 
   protected boolean isDivisibleByFive(int num) {
-    return true;
+    return num % 5 == 0;
   }
 
 }
