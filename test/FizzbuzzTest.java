@@ -33,7 +33,6 @@ public class FizzbuzzTest {
 
   @Test
   public void knowsThatFifteenIsDivisibleByFifteen() {
-
     Fizzbuzz fizzbuzz = new Fizzbuzz();
     assertTrue("It knows that fifteen is divisible by fifteen", fizzbuzz.isDivisibleByFifteen(15));
   }
@@ -55,4 +54,12 @@ public class FizzbuzzTest {
     Fizzbuzz fizzbuzz = new Fizzbuzz();
     assertEquals("It returns 'fizz' when given three", "fizz", fizzbuzz.fizzbuzz(3));
   }
+
+  @Test
+  public void returnsBuzzWhenGivenFive() {
+    Fizzbuzz fizzbuzz = new Fizzbuzz();
+    assertEquals("It returns 'buzz' when given five", "buzz", fizzbuzz.fizzbuzz(5));
+  }
+
+
 }
