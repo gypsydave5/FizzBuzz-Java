@@ -8,4 +8,8 @@ public class Fizzbuzz {
     return num % 5 == 0;
   }
 
+  protected boolean isDivisibleByFifteen(int num) {
+    return num % 15 == 0;
+  }
+
 }
