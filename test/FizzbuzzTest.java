@@ -40,8 +40,13 @@ public class FizzbuzzTest {
 
   @Test
   public void knowsThatSixteenIsNotDivisibleByFifteen() {
-
     Fizzbuzz fizzbuzz = new Fizzbuzz();
     assertFalse("It knows that sixteen is divisible by fifteen", fizzbuzz.isDivisibleByFifteen(16));
+  }
+
+  @Test
+  public void returnsTwoWhenGivenTwo() {
+    Fizzbuzz fizzbuzz = new Fizzbuzz();
+    assertEquals("It returns two when given two", "2", fizzbuzz.fizzbuzz(2));
   }
 }
