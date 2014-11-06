@@ -17,8 +17,11 @@ public class Fizzbuzz {
   }
 
   public String fizzbuzz(int number) {
-    return "2";
-
+    if (isDivisibleByThree(number)) {
+      return "fizz";
+    } else {
+      return Integer.toString(number);
+    }
   }
 
 }

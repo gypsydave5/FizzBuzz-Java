@@ -49,4 +49,10 @@ public class FizzbuzzTest {
     Fizzbuzz fizzbuzz = new Fizzbuzz();
     assertEquals("It returns two when given two", "2", fizzbuzz.fizzbuzz(2));
   }
+
+  @Test
+  public void returnsFizzWhenGivenThree() {
+    Fizzbuzz fizzbuzz = new Fizzbuzz();
+    assertEquals("It returns 'fizz' when given three", "fizz", fizzbuzz.fizzbuzz(3));
+  }
 }
